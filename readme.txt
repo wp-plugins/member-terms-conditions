@@ -32,9 +32,6 @@ Wordpress
 1. Upload the plugin to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 4. If you want to use Wordpress to edit your terms of use, privacy policy and welcome message, chmod terms-of-use.txt to 0664 (make them writable). The install process will attempt to do this for you. 
-
-NOTE: for additional security there is an .htaccess file included in the terms-of-use directory that douse not allow scripts to be executed from these files. This protects against code insertion.
-
 5. You can now login and edit your terms of use, privacy policy and welcome message via Site Admin > Terms of Use.
 
 Wordpress MU
@@ -42,10 +39,9 @@ Wordpress MU
 1. Upload the plugin to the `/wp-content/mu-plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 4. If you want to use Wordpress to edit your terms of use, privacy policy and welcome message, chmod terms-of-use.txt to 0664 (make them writable). The install process will attempt to do this for you. 
+5. You can now login and edit your terms of use, privacy policy and welcome message via Site Admin > Terms of Use.
 
 NOTE: for additional security there is an .htaccess file included in the terms-of-use directory that douse not allow scripts to be executed from these files. This protects against code insertion.
-
-5. You can now login and edit your terms of use, privacy policy and welcome message via Site Admin > Terms of Use.
 
 == Screenshots ==
 
