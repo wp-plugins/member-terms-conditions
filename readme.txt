@@ -49,8 +49,8 @@ NOTE: for additional security there is an .htaccess file included in the terms-o
 
 == Screenshots ==
 
-1. /tags/2.0.0/Screenshot1.png
-2. /tags/2.0.0/Screenshot2.png
+1. Agreement page
+2. Settings
 
 == Changelog ==
 
