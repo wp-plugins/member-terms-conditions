@@ -1,0 +1,7 @@
+Thankyou, you are now a full member of %%WEBSITENAME%%
+
+<h2>What Now</h2>%%WEBSITENAME%% is packed with many amazing features. So now that you\'ve got an account, what should you do?
+
+<h2>Add your own message</h2>You can add your own welcome message and edit the Terms & Conditions under the Settings > Terms & Conditions page.
+
+For more free plugins and Wordpress help visit <a href=\"http://ozblog.com.au/\">ozblog.com.au</a>
