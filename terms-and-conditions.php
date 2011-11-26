@@ -3,7 +3,7 @@
 Plugin Name: Terms & Conditions
 Plugin URI: http://ozblog.com.au/2008/09/20/wordpress-terms-of-use-plugin/
 Description: This Plugin adds a Terms & Conditions agreement page the first time a user logs in and a welcome message for new members.
-Version: 2.0.0
+Version: 2.0.1
 Author: Levi Putna
 Author URI: http://www.ozblog.com.au
 */
@@ -27,7 +27,8 @@ Author URI: http://www.ozblog.com.au
 */
 
 //setup the plugin root depending upon usage in Wordress or Wordpress MU
-define('_TACPATH', WP_PLUGIN_DIR.DIRECTORY_SEPARATOR."terms-and-conditions".DIRECTORY_SEPARATOR);
+define('_TACPATH', WP_PLUGIN_DIR.DIRECTORY_SEPARATOR."member-terms-conditions".DIRECTORY_SEPARATOR);
+
 
 
 //Initialize a few settings
@@ -75,11 +76,11 @@ function terms_and_conditions_filter($content) {
     	$site_name = get_option('terms_and_conditions_sitename');
   	}
 
-    $terms_and_conditions = stripslashes(file_get_contents(_TACPATH . 'terms-and-conditions.txt'));
+    $terms_and_conditions = stripslashes(file_get_contents(_TACPATH . 'terms-and-conditions' . DIRECTORY_SEPARATOR . 'terms-and-conditions.txt'));
     $terms_and_conditions = nl2br($terms_and_conditions);
 	$content              = str_replace("[terms-and-conditions]", $terms_and_conditions, $content);
 	
-	$privacy_policy       = stripslashes(file_get_contents(_TACPATH . 'privacy-policy.txt'));
+	$privacy_policy       = stripslashes(file_get_contents(_TACPATH . 'terms-and-conditions' . DIRECTORY_SEPARATOR . 'privacy-policy.txt'));
 	$privacy_policy       = nl2br($privacy_policy);
 	$content              = str_replace("[privacy-policy]", $privacy_policy, $content);
 	
@@ -94,15 +95,15 @@ function terms_and_conditions_settings() {
 
   // if the settings were changes save them
 	if($_POST){
-		$file = fopen(_TACPATH . 'terms-and-conditions.txt', 'w');
+		$file = fopen(_TACPATH . 'terms-and-conditions' . DIRECTORY_SEPARATOR . 'terms-and-conditions.txt', 'w');
 		fwrite($file, $_POST['terms_and_conditions']);
 		fclose($file);
 		
-		$file = fopen(_TACPATH . 'privacy-policy.txt', 'w');
+		$file = fopen(_TACPATH . 'terms-and-conditions' . DIRECTORY_SEPARATOR . 'privacy-policy.txt', 'w');
 		fwrite($file, $_POST['privacy_policy']);
 		fclose($file);
 		
-		$file = fopen(_TACPATH . 'welcome.txt', 'w');
+		$file = fopen(_TACPATH . 'terms-and-conditions' . DIRECTORY_SEPARATOR . 'welcome.txt', 'w');
 		fwrite($file, $_POST['welcome']);
 		fclose($file);
 		

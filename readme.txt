@@ -4,7 +4,7 @@ Donate link: http://www.ozblog.com/
 Tags: Terms, Use, agree, Privacy, Policy, welcome, MU, Open, Source
 Requires at least: 2.0.2
 Tested up to: 3.2.1
-Stable tag: 2.0.0
+Stable tag: 2.0.1
 
 This Plugin adds a Terms & Conditions agreement page the first time a user logs in and a welcome message for new members.
 
@@ -52,6 +52,9 @@ Features
 2. Settings
 
 == Changelog ==
+
+= 2.0.1 =
+* Update to work via the wordpress installer
 
 = 2.0.0 =
 * Update to work with Wordpress 3.2.1
