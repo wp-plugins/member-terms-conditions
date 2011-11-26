@@ -15,13 +15,13 @@ The WordPress Terms & Conditions plugin, pops up a Terms & Conditions agreement 
 For Wordpress installations setup with the multiple site option the Terms & Conditions will pop up the first time a user loges into there new site. 
 
 Features
-*	Works for both New Blogs and New users.
-*	Customisable Open Source Terms of Use agreement.
-*	Customisable Open Source Privacy Policy.
-*	Customisable Welcome Message.
-*	Can be integrated into a mature blog.
-*	Support for both WordPress and WordPress MU.
-*	No changes need to be made to the Sign up process.
+1. Works for both New Blogs and New users.
+2. Customisable Open Source Terms of Use agreement.
+3. Customisable Open Source Privacy Policy.
+4. Customisable Welcome Message.
+5. Can be integrated into a mature blog.
+6. Support for both WordPress and WordPress MU.
+7. No changes need to be made to the Sign up process.
 
 == Installation ==
 
